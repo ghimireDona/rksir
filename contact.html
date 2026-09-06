@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Join the Linux Side</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with sticky navigation -->
+  <header>
+    <nav>
+      <span class="logo">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2C12.5 2 11 3.5 11 5.5C11 7.5 12.5 9 12.5 9C12.5 9 14 7.5 14 5.5C14 3.5 12.5 2 12.5 2ZM6.5 6C6.5 6 5 7.5 5 9.5C5 11.5 6.5 13 6.5 13C6.5 13 8 11.5 8 9.5C8 7.5 6.5 6 6.5 6ZM18.5 6C18.5 6 17 7.5 17 9.5C17 11.5 18.5 13 18.5 13C18.5 13 20 11.5 20 9.5C20 7.5 18.5 6 18.5 6ZM12.5 11C9.5 11 6.5 13 6.5 16.5V19H18.5V16.5C18.5 13 15.5 11 12.5 11Z"/></svg>
+        Linux
+      </span>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="comparison.html">Compare</a></li>
+        <li><a href="roast.html">Roast</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+    <p>Want to join the Linux master race? Found a Windows flaw so devastating it deserves its own roast? Fill out the form below. We read every message. Unlike Windows logs, we actually keep records.</p>
+
+    <!-- Contact information cards -->
+    <section class="two-col" style="margin-top: 2rem;">
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--accent)"><path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/></svg>
+        </figure>
+        <h3>Email</h3>
+        <p>hello@linux.local</p>
+      </article>
+
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--green)"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"/></svg>
+        </figure>
+        <h3>Location</h3>
+        <p>Somewhere in /home</p>
+      </article>
+    </section>
+
+    <!-- Contact form -->
+    <section style="margin-top: 2rem;">
+      <form onsubmit="handleSubmit(event)">
+        <h2 style="margin-top: 0;">Send a Message</h2>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Linus Torvalds" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@linux.local" required>
+
+        <label for="distro">Favorite Distro</label>
+        <select id="distro" name="distro">
+          <option value="">Select your weapon</option>
+          <option value="arch">Arch Linux</option>
+          <option value="ubuntu">Ubuntu</option>
+          <option value="fedora">Fedora</option>
+          <option value="debian">Debian</option>
+          <option value="manjaro">Manjaro</option>
+          <option value="other">I use Arch btw</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us why Windows should be illegal..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>No data collected. No tracking. No telemetry. Promise.</p>
+  </footer>
+
+  <button class="go-top" onclick="goToTop()">&#8679;</button>
+
+  <script>
+    // Show/hide the "go to top" button based on scroll position
+    const goTopBtn = document.querySelector('.go-top');
+    window.onscroll = () => {
+      goTopBtn.classList.toggle('visible', window.scrollY > 300);
+    };
+    
+    // Smoothly scroll back to the top of the page
+    function goToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    // Handle form submission
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Message received! We will compile a response shortly.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

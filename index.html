@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux vs Windows - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with sticky navigation -->
+  <header>
+    <nav>
+      <span class="logo">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2C12.5 2 11 3.5 11 5.5C11 7.5 12.5 9 12.5 9C12.5 9 14 7.5 14 5.5C14 3.5 12.5 2 12.5 2ZM6.5 6C6.5 6 5 7.5 5 9.5C5 11.5 6.5 13 6.5 13C6.5 13 8 11.5 8 9.5C8 7.5 6.5 6 6.5 6ZM18.5 6C18.5 6 17 7.5 17 9.5C17 11.5 18.5 13 18.5 13C18.5 13 20 11.5 20 9.5C20 7.5 18.5 6 18.5 6ZM12.5 11C9.5 11 6.5 13 6.5 16.5V19H18.5V16.5C18.5 13 15.5 11 12.5 11Z"/></svg>
+        Linux
+      </span>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="comparison.html">Compare</a></li>
+        <li><a href="roast.html">Roast</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero section welcoming visitors -->
+    <section class="hero">
+      <figure class="hero-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2C12.5 2 11 3.5 11 5.5C11 7.5 12.5 9 12.5 9C12.5 9 14 7.5 14 5.5C14 3.5 12.5 2 12.5 2ZM6.5 6C6.5 6 5 7.5 5 9.5C5 11.5 6.5 13 6.5 13C6.5 13 8 11.5 8 9.5C8 7.5 6.5 6 6.5 6ZM18.5 6C18.5 6 17 7.5 17 9.5C17 11.5 18.5 13 18.5 13C18.5 13 20 11.5 20 9.5C20 7.5 18.5 6 18.5 6ZM12.5 11C9.5 11 6.5 13 6.5 16.5V19H18.5V16.5C18.5 13 15.5 11 12.5 11Z"/></svg>
+      </figure>
+      <h1>Welcome to the Linux Side</h1>
+      <p>While Windows users wait for updates, Linux users are already compiling, coding, and customizing everything. This site celebrates the freedom, speed, and power of Linux while roasting Windows into the ground.</p>
+      <a href="features.html" class="cta-button">Explore Linux</a>
+    </section>
+
+    <!-- Two column introduction cards -->
+    <section class="two-col">
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--green)"><path d="M12 2L2 7L12 12L22 7L12 2Z"/><path d="M2 17L12 22L22 17"/><path d="M2 12L12 17L22 12"/></svg>
+        </figure>
+        <h3>Why Linux?</h3>
+        <p>Linux powers most of the internet, supercomputers, servers, and embedded devices. It's free, open-source, and respects your privacy. Windows? It asks "Do you want to restart now?" every single day.</p>
+      </article>
+
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/><path d="M12 6C8.69 6 6 8.69 6 12C6 15.31 8.69 18 12 18C15.31 18 18 15.31 18 12C18 8.69 15.31 6 12 6ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16Z"/></svg>
+        </figure>
+        <h3>What You'll Find Here</h3>
+        <ul>
+          <li>Reasons why Linux crushes Windows</li>
+          <li>Side-by-side brutal comparisons</li>
+          <li>Roasts so hot they blue-screen</li>
+          <li>A form to confess your love for Linux</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Getting started guide -->
+    <article class="card">
+      <h3>Get Started</h3>
+      <p>New to Linux? Start with Ubuntu or Fedora for a smooth transition. Experienced user? Try Arch, Gentoo, or NixOS for the ultimate tinkering experience. Whatever you choose, you're already better off than being stuck on Windows.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Made with sudo and zero Windows licenses.</p>
+  </footer>
+
+  <button class="go-top" onclick="goToTop()">&#8679;</button>
+
+  <script>
+    // Show/hide the "go to top" button based on scroll position
+    const goTopBtn = document.querySelector('.go-top');
+    window.onscroll = () => {
+      goTopBtn.classList.toggle('visible', window.scrollY > 300);
+    };
+    
+    // Smoothly scroll back to the top of the page
+    function goToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

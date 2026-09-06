@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux vs Windows Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with sticky navigation -->
+  <header>
+    <nav>
+      <span class="logo">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2C12.5 2 11 3.5 11 5.5C11 7.5 12.5 9 12.5 9C12.5 9 14 7.5 14 5.5C14 3.5 12.5 2 12.5 2ZM6.5 6C6.5 6 5 7.5 5 9.5C5 11.5 6.5 13 6.5 13C6.5 13 8 11.5 8 9.5C8 7.5 6.5 6 6.5 6ZM18.5 6C18.5 6 17 7.5 17 9.5C17 11.5 18.5 13 18.5 13C18.5 13 20 11.5 20 9.5C20 7.5 18.5 6 18.5 6ZM12.5 11C9.5 11 6.5 13 6.5 16.5V19H18.5V16.5C18.5 13 15.5 11 12.5 11Z"/></svg>
+        Linux
+      </span>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="comparison.html">Compare</a></li>
+        <li><a href="roast.html">Roast</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Linux vs Windows</h1>
+    <p>A fair and balanced comparison. (By fair, we mean Linux wins in every category.)</p>
+
+    <!-- Comparison table -->
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th class="linux-column">Linux</th>
+          <th class="win-column">Windows</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cost</td>
+          <td class="linux-column">Free. Always.</td>
+          <td class="win-column">Expensive. Plus activation fees.</td>
+        </tr>
+        <tr>
+          <td>Privacy</td>
+          <td class="linux-column">Respects you. No telemetry spying.</td>
+          <td class="win-column">Tracks everything. Every click. Every file.</td>
+        </tr>
+        <tr>
+          <td>Updates</td>
+          <td class="linux-column">When you want them.</td>
+          <td class="win-column">"Your PC will restart in 2 minutes."</td>
+        </tr>
+        <tr>
+          <td>Security</td>
+          <td class="linux-column">Built-in. Rarely gets viruses.</td>
+          <td class="win-column">Needs antivirus, firewall, and prayers.</td>
+        </tr>
+        <tr>
+          <td>Performance</td>
+          <td class="linux-column">Lightning fast even on old hardware.</td>
+          <td class="win-column">Slow on the same hardware after 6 months.</td>
+        </tr>
+        <tr>
+          <td>Gaming</td>
+          <td class="linux-column">Proton + Steam = thousands of games.</td>
+          <td class="win-column">Exclusive games that crash every patch.</td>
+        </tr>
+        <tr>
+          <td>Software</td>
+          <td class="linux-column">Repositories, flatpak, snap, appimage.</td>
+          <td class="win-column">Random .exe files from sketchy sites.</td>
+        </tr>
+        <tr>
+          <td>File System</td>
+          <td class="linux-column">ext4, Btrfs, ZFS. Reliable and fast.</td>
+          <td class="win-column">NTFS. Corrupts if you look at it wrong.</td>
+        </tr>
+        <tr>
+          <td>Support</td>
+          <td class="linux-column">Massive community, forums, wikis.</td>
+          <td class="win-column">Paid support that still can't help.</td>
+        </tr>
+        <tr>
+          <td>Reboot Requirement</td>
+          <td class="linux-column">Never for updates.</td>
+          <td class="win-column">Every single update.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Final verdict card -->
+    <article class="card">
+      <figure class="card-icon">
+        <svg viewBox="0 0 24 24" fill="var(--green)"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/></svg>
+      </figure>
+      <h3>Final Verdict</h3>
+      <p>Linux wins. Not even close. Windows is fine for people who enjoy clicking "Next" on installers, waiting for blue screens, and paying for things Linux gives away. To each their own, but seriously, try Linux.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Comparison table generated without a single Windows license.</p>
+  </footer>
+
+  <button class="go-top" onclick="goToTop()">&#8679;</button>
+
+  <script>
+    // Show/hide the "go to top" button based on scroll position
+    const goTopBtn = document.querySelector('.go-top');
+    window.onscroll = () => {
+      goTopBtn.classList.toggle('visible', window.scrollY > 300);
+    };
+    
+    // Smoothly scroll back to the top of the page
+    function goToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

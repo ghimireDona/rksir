@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux Features</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with sticky navigation -->
+  <header>
+    <nav>
+      <span class="logo">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2C12.5 2 11 3.5 11 5.5C11 7.5 12.5 9 12.5 9C12.5 9 14 7.5 14 5.5C14 3.5 12.5 2 12.5 2ZM6.5 6C6.5 6 5 7.5 5 9.5C5 11.5 6.5 13 6.5 13C6.5 13 8 11.5 8 9.5C8 7.5 6.5 6 6.5 6ZM18.5 6C18.5 6 17 7.5 17 9.5C17 11.5 18.5 13 18.5 13C18.5 13 20 11.5 20 9.5C20 7.5 18.5 6 18.5 6ZM12.5 11C9.5 11 6.5 13 6.5 16.5V19H18.5V16.5C18.5 13 15.5 11 12.5 11Z"/></svg>
+        Linux
+      </span>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="comparison.html">Compare</a></li>
+        <li><a href="roast.html">Roast</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Linux Features</h1>
+    <p>These aren't just features. These are superpowers that Windows can only dream of having without paying a subscription fee.</p>
+
+    <!-- Feature cards in a two-column grid -->
+    <section class="two-col">
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--green)"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 11.99H7C7 9.24 9.24 7 12 7C14.76 7 17 9.24 17 11.99H12Z"/></svg>
+        </figure>
+        <h3>Free & Open Source</h3>
+        <p>Linux costs $0. Windows costs $139+. Also, you can read every line of Linux code. Windows keeps its source locked tighter than a BIOS password. Want to fix a bug? In Linux, you can. In Windows, you open a support ticket and wait three business days.</p>
+      </article>
+
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--accent)"><path d="M13 2.05V4.06C17.39 4.59 20.5 8.58 19.96 12.97C19.5 16.61 16.64 19.5 13 19.93V21.93C18.5 21.38 22.5 17.02 21.95 11.53C21.5 6.25 17.73 2.5 13 2.05ZM11 2.06C9.05 2.25 7.19 3 5.67 4.26L7.1 5.74C8.22 4.84 9.57 4.26 11 4.06V2.06ZM4.26 5.67C3 7.19 2.25 9.05 2.05 11H4.06C4.26 9.57 4.84 8.22 5.74 7.1L4.26 5.67ZM2.06 13C2.25 14.96 3 16.81 4.26 18.33L5.74 16.9C4.84 15.78 4.26 14.43 4.06 13H2.06ZM7.1 18.26L5.67 19.74C7.19 21 9.05 21.75 11 21.94V19.93C9.57 19.73 8.22 19.15 7.1 18.26ZM11 19.93C14.36 19.5 17.18 17.13 17.92 13.84L15.94 13.3C15.37 15.75 13.32 17.57 11 17.91V19.93Z"/></svg>
+        </figure>
+        <h3>Rolling Release Distros</h3>
+        <p>Arch, Manjaro, and others let you update your system continuously without reinstalling every two years. Windows forces you into a cycle of fresh installs, driver nightmares, and activation errors. Linux says "update me anytime" and actually means it.</p>
+      </article>
+
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--orange)"><path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V6H20V18ZM6 10H8V14H6V10ZM10 10H12V14H10V10ZM14 10H16V14H14V10Z"/></svg>
+        </figure>
+        <h3>The Terminal</h3>
+        <p>Windows has PowerShell. Linux has bash, zsh, fish, and a thousand tools that actually work together. Need to rename 10,000 files? One command. Need to monitor logs in real time? <code>tail -f</code>. Windows makes you click 47 times or install a paid utility.</p>
+      </article>
+
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--red)"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/></svg>
+        </figure>
+        <h3>Package Managers</h3>
+        <p>apt, yum, pacman, dnf, brew. Installing software is one command. No dodgy websites. No random .exe files. No "This app wants to access your contacts" pop-ups. Windows has the Microsoft Store, which is mostly empty or filled with scammy mobile ports.</p>
+      </article>
+
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"/><circle cx="12" cy="12" r="3"/></svg>
+        </figure>
+        <h3>Customization</h3>
+        <p>Want a desktop that looks like a spaceship, a calculator, or Windows 95? Linux lets you change everything. Window managers, themes, icons, fonts, layouts. Windows gives you light mode, dark mode, and "maybe next year" mode.</p>
+      </article>
+
+      <article class="card">
+        <figure class="card-icon">
+          <svg viewBox="0 0 24 24" fill="var(--green)"><path d="M16 11C16 13.21 14.21 15 12 15C9.79 15 8 13.21 8 11C8 8.79 9.79 7 12 7C14.21 7 16 8.79 16 11ZM2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V16H2V18Z"/></svg>
+        </figure>
+        <h3>Security</h3>
+        <p>Linux has built-in firewalls, SELinux, AppArmor, and a permission system that actually works. Windows needs antivirus, anti-malware, anti-ransomware, and still gets infected by a website with a suspicious look.</p>
+      </article>
+    </section>
+
+    <!-- Linux Commands: sudo and su with animated sliders -->
+    <article class="card">
+      <figure class="card-icon">
+        <svg viewBox="0 0 24 24" fill="var(--accent)"><path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z"/></svg>
+      </figure>
+      <h3>Commands: sudo &amp; su — Full Forms</h3>
+      <p>In Linux, every admin knows two little commands by heart. Here is what they actually stand for:</p>
+
+      <section class="slider-item">
+        <label class="slider-label" for="sudo-slider">
+          <span>sudo — <strong>Superuser Do</strong></span>
+          <span class="slider-value" id="sudo-value">85%</span>
+        </label>
+        <input type="range" id="sudo-slider" class="slider" min="0" max="100" value="85" style="--thumb-color: var(--blue);">
+        <p class="slider-desc">Runs a command with elevated privileges (as root) without logging in as root. Windows has UAC nagging popups — Linux just says "sudo".</p>
+      </section>
+
+      <section class="slider-item">
+        <label class="slider-label" for="su-slider">
+          <span>su — <strong>Switch User</strong></span>
+          <span class="slider-value" id="su-value">70%</span>
+        </label>
+        <input type="range" id="su-slider" class="slider" min="0" max="100" value="70" style="--thumb-color: var(--green);">
+        <p class="slider-desc">Switches to another user account (defaults to root) so you can run commands as that user. No GUI, no popups, just instant access.</p>
+      </section>
+    </article>
+
+    <!-- Terminal advantage highlight -->
+    <article class="card">
+      <h3>The Terminal Advantage</h3>
+      <p>Linux users get work done with the terminal. Windows users get a blue screen. The terminal lets you automate, script, and control your entire system with text. PowerShell tries, but it's like bringing a knife to a gunfight.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Features so good, Microsoft copies them in PowerPoint.</p>
+  </footer>
+
+  <button class="go-top" onclick="goToTop()">&#8679;</button>
+
+  <script>
+    // Show/hide the "go to top" button based on scroll position
+    const goTopBtn = document.querySelector('.go-top');
+    window.onscroll = () => {
+      goTopBtn.classList.toggle('visible', window.scrollY > 300);
+    };
+    
+    // Smoothly scroll back to the top of the page
+    function goToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+  </script>
+</body>
+</html>
